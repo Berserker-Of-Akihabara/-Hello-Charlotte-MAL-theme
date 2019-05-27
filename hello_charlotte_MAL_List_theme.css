@@ -1,8 +1,22 @@
 /*background covers entire screen*/
-body{ 
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
+body{
+  display:block;
+}
+
+
+body:before {
+background-color: #9492C8;
+background-image: url(https://cdn.myanimelist.net/s/common/uploaded_files/1558953691-d217521f4acc00f687cf6b6972f158a7.jpeg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+content: "";
+height: 100%;
+left: 0;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: -2;
 }
 
 /*a little more space for header*/
@@ -107,6 +121,14 @@ tr td:last-child {
   border:none;
 }
 
+@media (max-width:1058px)
+{
+  .list-menu-float
+  {
+    top: 69px;
+  }
+}
+
 
 .list-menu-float:hover .icon-menu
 {
@@ -157,8 +179,15 @@ tr td:last-child {
 }
 
 #advanced-options .btn-apply:hover,
-#advanced-options .btn-clear:hover {
+#advanced-options .btn-clear:hover 
+{
   background-color: rgba(0, 0, 0, 0.5);
+}
+
+/*recolor footer*/
+#footer-block
+{
+  background-color: #000000;
 }
 
 /*text colors*/
