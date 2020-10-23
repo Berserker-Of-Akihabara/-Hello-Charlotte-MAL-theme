@@ -236,3 +236,14 @@ td.data.type,td.data.progress
 {
   color: #f4eee4;
 }
+
+.status
+{
+  -moz-border-radius: 0px !important;
+  -webkit-border-radius: 0px !important;
+  border-radius: 0px !important;
+  -webkit-border-top-left-radius: 0px !important;
+  -webkit-border-bottom-left-radius: 0px !important;
+  -moz-border-radius-topleft: 0px !important;
+  -moz-border-radius-bottomleft: 0px !important;
+}
